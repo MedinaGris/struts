@@ -28,6 +28,7 @@ public class RegistroControllerBase<T extends IRegistroEntityBase> extends Actio
         } else {
             service.crearRegistro(registro);
         }
+        System.out.println("registro__________________________"+registro.getId());
         resetItemList();
 
         return "success";
