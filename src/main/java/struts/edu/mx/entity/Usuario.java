@@ -51,7 +51,7 @@ public class Usuario implements Serializable, IRegistroEntityBase {
         this.idUsuario = idUsuario;
     }
 
-    public Integer getIdUsuario() {
+    public int getIdUsuario() {
         return idUsuario;
     }
 
@@ -125,8 +125,8 @@ public class Usuario implements Serializable, IRegistroEntityBase {
     }
 
     @Override
-    public void getId() {
-        getIdUsuario();
+    public int getId() {
+        return getIdUsuario();
     }
 
     @Override

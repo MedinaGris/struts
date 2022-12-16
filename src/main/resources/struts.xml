@@ -33,16 +33,15 @@
             <result >pages/content/actualizarUsuario.jsp</result>
         </action> 
         
-        <action name="actualizarRegistro" 
+        <action name="editarUsuarioAction" 
                  class="struts.edu.mx.controller.UsuarioController"
-                 method= "actualizarRegistroUsuario">
+                 method= "crearRegistro">
             <result >pages/content/listarUsuario.jsp</result>
         </action>
         
-        <action name="actualizarRegistroFormulario" 
-                 class="struts.edu.mx.controller.UsuarioController"
-                 method= "actualizarRegistroUsuario">
-            <result >pages/content/listarUsuario.jsp</result>
+        <action name="editarUsuarioActionForm" 
+                 class="struts.edu.mx.controller.UsuarioController">
+            <result >pages/content/editarUsuario.jsp</result>
         </action>
     
     </package>

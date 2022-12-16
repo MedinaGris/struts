@@ -51,6 +51,17 @@
                                 </td>
 
                                 <td>
+                                <s:a action="editarUsuarioActionForm">
+                                    <s:param name="usuario.idUsuario" value="idUsuario">
+
+                                    </s:param>
+                                    <s:param name="usuario.nombreUsuario" value="nombreUsuario">
+
+                                    </s:param>
+                                    
+                                    <span>Editar</span>
+                                </s:a>
+                                    
                                 <s:a action="eliminarRegistro">
                                     <s:param name="usuario.idUsuario" value="idUsuario">
 
