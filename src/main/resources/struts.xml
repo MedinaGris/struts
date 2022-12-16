@@ -1,0 +1,50 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+ 
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="actionPrincipal"
+                class="struts.edu.mx.controller.UsuarioController"
+               >
+            <result >pages/content/listarUsuario.jsp</result>
+        </action>  
+        
+         <action name="crearRegistroformulario">
+             <result >pages/content/crearUsuario.jsp</result>
+        </action> 
+          
+        
+        <action name="crearRegistro" 
+                class="struts.edu.mx.controller.UsuarioController"
+                method= "crearRegistro">
+            <result >pages/content/listarUsuario.jsp</result>
+        </action> 
+        
+        <action name="eliminarRegistro" 
+                class="struts.edu.mx.controller.UsuarioController"
+                method= "eliminarRegistro">
+            <result >pages/content/listarUsuario.jsp</result>
+        </action> 
+        
+        <action name="actualizarRegistroFormulario">
+            <result >pages/content/actualizarUsuario.jsp</result>
+        </action> 
+        
+        <action name="actualizarRegistro" 
+                 class="struts.edu.mx.controller.UsuarioController"
+                 method= "actualizarRegistroUsuario">
+            <result >pages/content/listarUsuario.jsp</result>
+        </action>
+        
+        <action name="actualizarRegistroFormulario" 
+                 class="struts.edu.mx.controller.UsuarioController"
+                 method= "actualizarRegistroUsuario">
+            <result >pages/content/listarUsuario.jsp</result>
+        </action>
+    
+    </package>
+
+</struts>
